@@ -1,15 +1,16 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Carousel from "../../components/Carousel/Container";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import * as S from "./style";
-import Posts from "./Data";
+import Posts, { items } from "./Data";
 import Cards from "../../components/Card";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import React from "react";
+
+import Carousel, { CarouselItem } from "../../components/Carousel";
 
 const Presenter = () => {
   const Search = styled("div")(({ theme }) => ({
@@ -64,7 +65,11 @@ const Presenter = () => {
     <>
       <Box sx={{ width: "auto" }}>
         <Header />
-        <Carousel />
+        <Carousel>
+          {items.map((item, i) => (
+            <CarouselItem key={i} {...item} />
+          ))}
+        </Carousel>
         <h3>Market Place</h3>
         <S.Div>
           {/* <div>

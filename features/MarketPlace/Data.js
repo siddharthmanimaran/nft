@@ -160,5 +160,25 @@ const Posts = [
     id: "20",
   },
 ];
+export const items = [
+  {
+    name: "Aya Bouchiha",
+    description: "Full Stack Web Developer",
+    image:
+      "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
+  },
+  {
+    name: "John Doe",
+    description: "Author",
+    image:
+      "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
+  },
+  {
+    name: "Pitsu Coma",
+    description: "Math Student",
+    image:
+      "https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ",
+  },
+];
 
 export default Posts;
