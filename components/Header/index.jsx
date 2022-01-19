@@ -14,7 +14,7 @@ import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 
 import * as S from "./style";
 
-function Presenter(props) {
+function Header(props) {
   // const theme = createTheme({
   //   typography: {
   //     // fontFamily: ["Brush Script MT", "Brush Script Std", "cursive"].join(","),
@@ -92,13 +92,19 @@ function Presenter(props) {
           </S.Bars>
           <S.Items>
             <S.Button>
+              <S.Anchor href="/currentDrop">
+                <S.Span>Current Drop</S.Span>
+              </S.Anchor>
+            </S.Button>
+            <S.Button>
               <S.Anchor href="/demo">
                 <S.Span>Home</S.Span>
               </S.Anchor>
             </S.Button>
+
             <S.Button>
-              <S.Anchor href="/about">
-                <S.Span>About Us</S.Span>
+              <S.Anchor href="/marketplace">
+                <S.Span>Market Place</S.Span>
               </S.Anchor>
             </S.Button>
             <S.Button>
@@ -123,4 +129,4 @@ function Presenter(props) {
 //   title: PropTypes.string.isRequired,
 // };
 
-export default Presenter;
+export default Header;
