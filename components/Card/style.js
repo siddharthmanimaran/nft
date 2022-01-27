@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-// export const Dale = styled.div`
-//   display: flex,
-//   justify-content: center,`;
 
 export const Container = styled.div`
   display: grid;
@@ -30,11 +27,6 @@ export const Anchor = styled.a`
 export const Image = styled.img`
   width: 500px;
   height: auto;
-
-  // :hover {
-  //   width: 900px;
-  //   transition: 2s;
-  // }
 `;
 
 export const Overlay = styled.div`
@@ -57,10 +49,10 @@ export const Header = styled.div`
   align-items: center;
   gap: 2em;
   padding: 2em;
-  background-color: #fff;
+  background-color: #efe2ba;
+
   transform: translateY(-100%);
   transition: 0.2s ease-in-out;
-
   :hover {
     transform: translateY(0);
   }
@@ -69,18 +61,15 @@ export const Header = styled.div`
 export const Title = styled.h3`
   font-size: 1em;
   margin: 0 0 0.3em;
-  color: #6a515e;
 `;
 
 export const Status = styled.span`
   font-size: 0.8em;
-  color: #d7bdca;
 `;
 
 export const Description = styled.p`
   padding: 0 2em 2em;
   margin: 0;
-  color: #d7bdca;
   font-family: "MockFlowFont";
   display: -webkit-box;
   -webkit-box-orient: vertical;
