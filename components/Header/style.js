@@ -1,115 +1,87 @@
 import styled from "styled-components";
 
-export const Button = styled.div``;
-export const Title = styled.h1`
-  // position: relative;
-  color: #cef0d4;
-  font-family: "Sofia", sans-serif;
-  font-weight: normal;
-  text-shadow: 1px 1px 2px #082b34;
+export const NavbarContainer = styled.nav`
+  width: 100%;
+  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  background-color: #4056a1;
   font-style: oblique;
+  font-family: Sofia, sans-serif;
+  @media (min-width: 700px) {
+    height: 80px;
+  }
 `;
 
-export const Items = styled.div`
+export const LeftContainer = styled.div`
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  justify-content: flex-start;
+`;
+
+export const RightContainer = styled.div`
+  flex: 70%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
 `;
 
-export const Anchor = styled.a`
-  position: relative;
-  z-index: 2;
-  display: block;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  color: "#d79922",
-  font-weight: bold;
-  // font-size: 24px;
-  // border-radius: 50%;
+export const NavbarInnerContainer = styled.div`
+  width: 100%;
+  height: 80px;
+  display: flex;
+`;
 
-  transition: all 1s;
-  :after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-radius: 50%;
-    // background: black;
-    // transition: all 0.4s;
-  }
-  :hover {
-    // color: White;
-    // box-shadow: 1px 1px 25px 10px;
-  }
+export const NavbarLinkContainer = styled.div`
+  display: flex;
+`;
 
-  :hover:after {
-    width: 100%;
-  }
-  @media screen and (max-width: 768px) {
+export const NavbarLink = styled.a`
+  color: white;
+  font-size: x-large;
+  text-decoration: none;
+  margin: 10px;
+  @media (max-width: 700px) {
     display: none;
   }
 `;
 
-export const Span = styled.span`
-  position: relative;
-  z-index: 2;
+export const NavbarLinkExtended = styled.a`
+  color: white;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 10px;
 `;
 
-export const Image = styled.img`
-  display: inline-block;
-  max-height: 56px;
-  max-width: 225px;
-  padding: 8px 4px 8px 12px;
-  vertical-align: middle;
+export const Logo = styled.img`
+  margin: 10px;
+  max-width: 180px;
+  height: auto;
 `;
 
-export const Bars = styled.div`
-  display: none;
-  color: black;
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: -30px;
-    right: -25px;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
+export const OpenLinksButton = styled.button`
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 45px;
+  cursor: pointer;
+  @media (min-width: 700px) {
+    display: none;
   }
 `;
 
-export const Header = styled.a`
-  position: relative;
-  z-index: 2;
-  display: block;
-  width: 100px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  color: #d79922;
-  font-weight: bold;
-  font-size: 24px;
-
-  transition: all 1s;
-  :after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-radius: 50%;
-    // background: black;
-    // transition: all 0.4s;
-  }
-  :hover {
-    // color: White;
-    // box-shadow: 1px 1px 25px 10px;
-  }
-
-  :hover:after {
-    width: 100%;
+export const NavbarExtendedContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 700px) {
+    display: none;
   }
 `;
